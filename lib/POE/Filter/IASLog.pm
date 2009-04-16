@@ -6,7 +6,7 @@ use Parse::IASLog;
 use base qw(POE::Filter);
 use vars qw($VERSION);
 
-$VERSION = '1.04';
+$VERSION = '1.06';
 
 sub new {
   my $class = shift;
@@ -77,7 +77,7 @@ It is intended to be used in a stackable filter, L<POE::Filter::Stackable>, with
 
 =over
 
-=item new
+=item C<new>
 
 Creates a new POE::Filter::IASLog object. Takes one optional parameter:
 
@@ -90,24 +90,24 @@ Creates a new POE::Filter::IASLog object. Takes one optional parameter:
 
 =over
 
-=item get
+=item C<get>
 
-=item get_one_start
+=item C<get_one_start>
 
-=item get_one
+=item C<get_one>
 
 Takes an arrayref which is contains lines of IAS-formatted text, returns an arrayref of IAS hashref records,
 see L<Parse::IASLog> for details of what a record will contain.
 
-=item get_pending
+=item C<get_pending>
 
 Returns the filter's partial input buffer.
 
-=item put
+=item C<put>
 
 The put method is not implemented.
 
-=item clone
+=item C<clone>
 
 Makes a copy of the filter, and clears the copy's buffer.
 
@@ -119,7 +119,7 @@ Chris C<BinGOs> Williams <chris@bingosnet.co.uk>
 
 =head1 LICENSE
 
-Copyright C<(c)> Chris Williams
+Copyright E<copy> Chris Williams
 
 This module may be used, modified, and distributed under the same terms as Perl itself. Please see the license that came with your Perl distribution for details.
 

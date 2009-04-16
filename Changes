@@ -1,6 +1,11 @@
 Change log for POE::Filter::IASLog
 ==================================
 
+1.06	Thu Apr 16 09:24:53 BST 2009
+	- Add repository to META.yml
+	- Update the LICENSE file
+	- Tidy the POD a bit
+
 1.04	Mon May  5 08:40:58 BST 2008
 	- Added license info, removed kwalitee test
 
