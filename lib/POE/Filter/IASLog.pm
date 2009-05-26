@@ -6,7 +6,7 @@ use Parse::IASLog;
 use base qw(POE::Filter);
 use vars qw($VERSION);
 
-$VERSION = '1.06';
+$VERSION = '1.08';
 
 sub new {
   my $class = shift;
@@ -130,3 +130,5 @@ L<Parse::IASLog>
 L<POE::Filter::Stackable>
 
 L<POE::Filter::Line>
+
+=cut

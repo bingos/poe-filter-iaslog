@@ -1,6 +1,9 @@
 Change log for POE::Filter::IASLog
 ==================================
 
+1.08	Tue May 26 21:54:17 BST 2009
+	- Makefile.PL: auto_license, auto_provides and githubmeta.
+
 1.06	Thu Apr 16 09:24:53 BST 2009
 	- Add repository to META.yml
 	- Update the LICENSE file
