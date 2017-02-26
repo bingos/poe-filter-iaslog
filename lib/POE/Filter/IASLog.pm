@@ -1,12 +1,11 @@
 package POE::Filter::IASLog;
 
+#ABSTRACT: A POE Filter for Microsoft IAS-formatted log entries.
+
 use strict;
 use warnings;
 use Parse::IASLog;
 use base qw(POE::Filter);
-use vars qw($VERSION);
-
-$VERSION = '1.08';
 
 sub new {
   my $class = shift;
@@ -52,12 +51,9 @@ sub clone {
   return bless $nself, ref $self;
 }
 
-1;
-__END__
+qq[I see log people];
 
-=head1 NAME
-
-POE::Filter::IASLog - A POE Filter for Microsoft IAS-formatted log entries.
+=pod
 
 =head1 SYNOPSIS
 
@@ -112,16 +108,6 @@ The put method is not implemented.
 Makes a copy of the filter, and clears the copy's buffer.
 
 =back
-
-=head1 AUTHOR
-
-Chris C<BinGOs> Williams <chris@bingosnet.co.uk>
-
-=head1 LICENSE
-
-Copyright E<copy> Chris Williams
-
-This module may be used, modified, and distributed under the same terms as Perl itself. Please see the license that came with your Perl distribution for details.
 
 =head1 SEE ALSO
 
